@@ -108,68 +108,123 @@
                 <img class="img-modal" src="logo.png" alt="best autism school in pune">
                 <p style="font-size: 18px;">Are you looking for the right place for your child?</p>
                 <p style="font-size: 18px;">Join us!!</p>
-                <form id="myForm" onsubmit="return validateForm(event)">
-                  <input id="name"  style="padding: 0.75%;" type="text" placeholder="Name" required>
-                  <input id="email" style="padding: 0.75%;" type="email" placeholder="E-mail" required>
-                  <button type="submit" class="submit">Submit</button>
+                <form id="mailing-list" method="POST">
+                  <input
+                      name="Name"
+                      type="text"
+                      placeholder="Name"
+                      required
+                  >
+                  <input
+                      name="Email"
+                      type="email"
+                      placeholder="Email"
+                      required
+                  >
+                  <button class="submit" type="submit">Submit</button>
               </form>
               
             </div>
         </div>
-    
+
         <script>
-            const popup = document.querySelector('.popup');
-            const x = document.querySelector('.close');
-            const submit = document.querySelector('.submit');
+         const form = document.querySelector("#mailing-list")
+         form.addEventListener("submit", (e) => {
+             e.preventDefault();
+     
+             
+     
+             const data = new FormData(form);
+     
+             fetch("https://script.google.com/macros/s/AKfycbzteNTHBmnWFOVdSQHTg77OHf65FRvsyXZ56-FSnRzgtvNtApP0vgVDj6EIS4D2wESUXQ/exec", {
+                 method: "POST",
+                 body: data,
+             }
+             )
+             .then(response => {
+                 if (response.ok) {
+                     alert('Form submitted successfully!');
+                     setTimeout(function() {
+                         popup.classList.remove('showPopup');
+                         popup.childNodes[1].classList.remove('showPopup');
+                     }, 1000);
+                 } else {
+                     alert('Error submitting form.');
+                 }
+             })
+             .catch(error => {
+                 alert('Error submitting form.');
+                 console.error('Error:', error);
+             });
+     
+         })
+     
+      const popup = document.querySelector('.popup');
+         const x = document.querySelector('.close');
+         const submit = document.querySelector('.submit');
+         
+
+      //submit.addEventListener('click', submitForm);
+
+ 
+     window.addEventListener('load', () => {
+         popup.classList.add('showPopup');
+         popup.childNodes[1].classList.add('showPopup');
+     })
+ 
+     x.addEventListener('click', (e) => {
+         e.stopPropagation(); // Prevents the event from bubbling up to the parent (popup)
+         popup.classList.remove('showPopup');
+         popup.childNodes[1].classList.remove('showPopup');
+     })
+ 
+   //   submit.addEventListener('click', (e) => {
+   //       e.stopPropagation(); // Prevents the event from bubbling up to the parent (popup)
+   //       popup.classList.remove('showPopup');
+   //       popup.childNodes[1].classList.remove('showPopup');
+   //   })
+
+
+   
+
+ //   function submitForm(event) {
+ // event.preventDefault(); // Prevent default form submission behavior
+
+ // var name = document.getElementById('name').value;
+ // var email = document.getElementById('email').value;
+ // var url = 'https://script.google.com/macros/s/AKfycbwLyrvQRvzLk1y_1gl77OxB4TKSG6e75-cLOg0ErCUl_DUgEtbI9-ZqzFJUqM3rtL9Q4g/exec';
+
+ // fetch(url, {
+ //     method: 'POST',
+ //     body: JSON.stringify({name: name, email: email}),
+     
+ // })
+ // .then(response => {
+ //     if (response.ok) {
+ //         alert('Form submitted successfully!');
+ //         setTimeout(function() {
+ //             popup.classList.remove('showPopup');
+ //             popup.childNodes[1].classList.remove('showPopup');
+ //         }, 1000);
+ //     } else {
+ //         alert('Error submitting form.');
+ //     }
+ // })
+ // .catch(error => {
+ //     alert('Error submitting form.');
+ //     console.error('Error:', error);
+ // });
+
+
+ 
+
+
+ //return false;
+//}
+
+ </script>
     
-        window.addEventListener('load', () => {
-            popup.classList.add('showPopup');
-            popup.childNodes[1].classList.add('showPopup');
-        })
-    
-        x.addEventListener('click', (e) => {
-            e.stopPropagation(); // Prevents the event from bubbling up to the parent (popup)
-            popup.classList.remove('showPopup');
-            popup.childNodes[1].classList.remove('showPopup');
-        })
-    
-      //   submit.addEventListener('click', (e) => {
-      //       e.stopPropagation(); // Prevents the event from bubbling up to the parent (popup)
-      //       popup.classList.remove('showPopup');
-      //       popup.childNodes[1].classList.remove('showPopup');
-      //   })
-
-      function validateForm(event) {
-         console.log('brother please')
-    event.preventDefault(); // Prevent default form submission behavior
-
-    var name = document.getElementById('name').value;
-    var email = document.getElementById('email').value;
-    var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-    if (name.trim() === '') {
-        alert('Please enter your name.');
-        return false;
-    }
-
-    if (!emailPattern.test(email)) {
-        alert('Please enter a valid email address.');
-        return false;
-    }
-
-    alert('Form submitted successfully!');
-
-    // Hide the popup after a delay
-    setTimeout(function() {
-        popup.classList.remove('showPopup');
-        popup.childNodes[1].classList.remove('showPopup');
-    }, 1000);
-
-    return true;
-}
-
-
-        </script>
+        
         <style>
                   @import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
             * {
