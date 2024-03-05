@@ -177,6 +177,11 @@
          popup.classList.remove('showPopup');
          popup.childNodes[1].classList.remove('showPopup');
      })
+
+     setTimeout(function() {
+        popup.classList.remove('showPopup');
+        popup.childNodes[1].classList.remove('showPopup');
+    }, 1000);
  
    //   submit.addEventListener('click', (e) => {
    //       e.stopPropagation(); // Prevents the event from bubbling up to the parent (popup)
@@ -199,27 +204,8 @@
  //     body: JSON.stringify({name: name, email: email}),
      
  // })
- // .then(response => {
- //     if (response.ok) {
- //         alert('Form submitted successfully!');
- //         setTimeout(function() {
- //             popup.classList.remove('showPopup');
- //             popup.childNodes[1].classList.remove('showPopup');
- //         }, 1000);
- //     } else {
- //         alert('Error submitting form.');
- //     }
- // })
- // .catch(error => {
- //     alert('Error submitting form.');
- //     console.error('Error:', error);
- // });
-
-
  
 
-
- //return false;
 //}
 
  </script>
