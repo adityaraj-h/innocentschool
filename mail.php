@@ -12,7 +12,7 @@ $subject = "Message from InnocentTimes Admission Enquiry form";
 $txt =" Parents Name - ". $pname . "\r\n Parents Phone number - " . $pmobile . "\r\n Parents Email - " . $pemail . "\r\n Location - " . $location . "\r\n Student Name - " . $sname . "\r\n Student Class - " . $sclass . "\r\n Message - " . $message;
 $headers = "From: " . $pemail;
 
-if($email!=NULL){
+if($pemail!=NULL){
     mail($to,$subject,$txt,$headers);
 }
 //redirect
