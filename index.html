@@ -880,7 +880,7 @@
          margin-top:39px;
          }
       </style>
-      <div class="floating-wid shadow">
+      <div class="floating-wid floating-enquiry shadow" id="float-enq">
          <h4 class="footer-title text-center" id="getform">Quick Enquiry</h4>
          <form action="lite_process.php" method="post" class="space d-none" id="showform">
             <div class="col-sm-12" style="padding-left: 0px;background-color:transparent;">
@@ -904,8 +904,14 @@
       <script>
          var getForm = document.getElementById("getform");
          var showForm = document.getElementById("showform");
+         var floatparent = document.getElementById("float-enq");
          getForm.addEventListener("click", () => {
+            
             showForm.classList.toggle("d-none");
+            // floatparent.classList.remove("floating-wid");
+            // floatparent.classList.add("floating-enquiry");
+            floatparent.classList.toggle("floating-wid");
+
          })
       </script>
       

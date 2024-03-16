@@ -1236,3 +1236,20 @@ table {
 
 }
 
+.floating-enquiry {
+
+	position: fixed;
+	bottom: 0;
+	right: 28px;
+	width: 300px;
+	color: #5B4CA7;
+	background-color: #FFEE00;
+	padding: 10px;
+	z-index: 999999;
+	border-radius: 20px;
+	/* transform: translate(50%, 50%) rotate(-90deg); */
+
+}
+
+
+
