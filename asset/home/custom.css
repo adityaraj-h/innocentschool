@@ -1222,15 +1222,17 @@ table {
 }
 /*23-04-2023*/
 .floating-wid {
-position: fixed;
-bottom: 0px;
-right: 0px;
-width: 300px;
-color: #5B4CA7;
-background-color: #FFEE00;
-padding: 10px;
-z-index: 999999;
-border-radius: 20px;
-transform: scale(0.85);
+
+	position: fixed;
+	bottom: 50%;
+	right: 28px;
+	width: 200px;
+	color: #5B4CA7;
+	background-color: #FFEE00;
+	padding: 3px;
+	z-index: 999999;
+	border-radius: 20px;
+	transform: translate(50%, 50%) rotate(-90deg);
+
 }
 
