@@ -7264,6 +7264,10 @@ button.bg-dark:focus {
     display: block !important
 }
 
+img.img-fluid.d-block.d-sm-none {
+    margin-top: 116px;
+}
+
 .d-table {
     display: table !important
 }
