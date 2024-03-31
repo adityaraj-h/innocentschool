@@ -86,8 +86,9 @@
         <div class="call-icon">
             <img src="images/home/call.png" alt="call-icon" class="img-fluid call-icon">
         </div>
-            <div class="call-us">
-            <p><a href="tel:919881455203" style="color: white;">+91 9881455203</a>,<a href="tel:919767788797" style="color: white;">+91 9767788797</a></p>
+        <div class="call-us">
+            <p><a href="tel:919881455203" style="color: white;">+91 9881455203</a>,<a href="tel:919767788797"
+                    style="color: white;">+91 9767788797</a></p>
 
         </div>
         <div class="call-buttons ml-auto">
@@ -133,18 +134,18 @@
                                 <h5><a class="dropdown-item" href="nursery-school.html">NURSERY SCHOOL</a></h5>
                                 <h5><a class="dropdown-item" href="infant-care.html">INFANT CARE</a></h5>
                                 <h5><a class="dropdown-item" href="toddler-care.html">TODDLER CARE</a></h5>
-                             <!--    <h5><a class="dropdown-item" href="online-school.html">ONLINE SCHOOL</a></h5> -->
+                                <!--    <h5><a class="dropdown-item" href="online-school.html">ONLINE SCHOOL</a></h5> -->
                                 <h5><a class="dropdown-item" href="early-intervention-centre.html">EARLY INTERVENTION
                                         CENTRE</a></h5>
-                             <!--    <h5><a class="dropdown-item" href="inclusive-education-center.html">INCLUSIVE
+                                <!--    <h5><a class="dropdown-item" href="inclusive-education-center.html">INCLUSIVE
                                         EDUCATION</a></h5> -->
-                           <!--      <h5><a class="dropdown-item" href="before-and-after-school-programme.html">BEFORE AND
+                                <!--      <h5><a class="dropdown-item" href="before-and-after-school-programme.html">BEFORE AND
                                         AFTER SCHOOL PROGRAMME</a></h5> -->
                                 <h5><a class="dropdown-item" href="school-break-solutions.html">SCHOOL BREAK
                                         SOLUTIONS</a></h5>
                                 <!-- <h5><a class="dropdown-item" href="teachers-training-programme.html">TEACHERS' TRAINING
                                         PROGRAMME</a></h5> -->
-                             <!--    <h5><a class="dropdown-item" href="upcoming-events.html">UPCOMING EVENTS</a></h5> -->
+                                <!--    <h5><a class="dropdown-item" href="upcoming-events.html">UPCOMING EVENTS</a></h5> -->
                             </div>
                         </li>
                         <li class="nav-item dropdown programmes-item">
@@ -158,13 +159,13 @@
                                         href="leadership-and-expertise.html">LEADERSHIP &amp; EXPERTISE</a></p>
                                 <p id="about-three"><a class="dropdown-subitem"
                                         href="innocent-times-legacy-awards.html">INNOCENT TIMES LEGACY AWARDS</a></p>
-                           <!--      <p id="about-four"><a class="dropdown-subitem" href="team.html">OUR TEAM</a></p> -->
+                                <!--      <p id="about-four"><a class="dropdown-subitem" href="team.html">OUR TEAM</a></p> -->
                                 <h5 id="about3"><a class="dropdown-item dropdown-toggle" href="">OUR VALUES</a></h5>
                                 <p id="about-seven"><a class="dropdown-subitem" href="community-service.html">COMMUNITY
                                         SERVICE</a></p>
                                 <p id="about-eight"><a class="dropdown-subitem" href="childcare-advocacy.html">CHILDCARE
                                         ADVOCACY</a></p>
-                              <!--   <h5 id="about4"><a class="dropdown-item" href="http://innocenttimes.com/blog/">BLOG</a> -->
+                                <!--   <h5 id="about4"><a class="dropdown-item" href="http://innocenttimes.com/blog/">BLOG</a> -->
                                 </h5>
                             </div>
                         </li>
@@ -231,7 +232,25 @@
                                 <img src="images/smartphone-call.png" alt="map" class="img-fluid">
                             </div>
                             <div class="contact-info">
-                                <p><a href="tel:9881455203" style="color: #000;">9881455203</a></p>
+                                <p>+91 9881455203</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="icon-size">
+                                <img src="images/map.png" alt="map" class="img-fluid">
+                            </div>
+                            <div class="contact-info">
+                                <p>105, Prospero, D.P Farm, Kharadi<br>
+                                    Pune,Maharashtra 411014
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="icon-size">
+                                <img src="images/smartphone-call.png" alt="map" class="img-fluid">
+                            </div>
+                            <div class="contact-info">
+                                <p>+91 7030152008</p>
                             </div>
                         </div>
                         <div class="row">
@@ -239,8 +258,7 @@
                                 <img src="images/message.png" alt="map" class="img-fluid">
                             </div>
                             <div class="contact-info">
-                                <p><a style="color: black;"
-                                        href="mailto:school@innocenttimes.co.in">school@innocenttimes.co.in</a></p>
+                                <p>school@innocenttimes.com</p>
                             </div>
                         </div>
                         <div class="row">
@@ -250,7 +268,7 @@
                                     <img src="images/google Color.png" alt="map" class="img-fluid">
                                 </div>
                                 <div class="contact-info">
-                                    <p>find us on Google map</p>
+                                    <p>Find us on Google map</p>
                                 </div>
                             </a>
                         </div>
@@ -278,8 +296,12 @@
                                 </div>
                                 <div class="row">
                                     <div class="col-sm-12">
-                                        <input type="tel" placeholder="School Center / Location *" name="Location"
-                                            class="frm-box" required />
+                                        <label for="location"></label>
+                                        <select name="Location" id="location" class="frm-box" required>
+                                            <option value="">School Center / Location *</option>
+                                            <option value="location1">Aundh</option>
+                                            <option value="location2">Kharadi</option>
+                                        </select>
                                     </div>
                                 </div>
                                 <div class="row">
@@ -317,95 +339,94 @@
         </section>
     </div>
     </div>
- <section class="footer">
-            <div class="container">
-               <div class="row">
-                  <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-xs-4">
-                     <img src="images/footer-logo.png" alt="innocent images footer logo"
-                        class="img-fluid logo-footer">
-                  </div>
-                  <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-xs-4">
-                     <h3 class="footer-title">Get in Touch</h3>
-                     <p class="footer-para">
+    <section class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-xs-4">
+                    <img src="images/footer-logo.png" alt="innocent images footer logo" class="img-fluid logo-footer">
+                </div>
+                <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-xs-4">
+                    <h3 class="footer-title">Get in Touch</h3>
+                    <p class="footer-para">
                         Innocent Times School<br>
                         Sai Pratik,<br>
                         260/2/4, Ganeshbaug,<br>
                         Aundh, Pune - 411045
                         <br><br>
-                        <a href="tel:919881455203" style="color: #413D47;">+91 9881455203</a>,<br><a href="tel:919767788797" style="color: #413D47;">+91 9767788797</a><br>
+                        <a href="tel:919881455203" style="color: #413D47;">+91 9881455203</a>,<br><a
+                            href="tel:919767788797" style="color: #413D47;">+91 9767788797</a><br>
                         <!--  <a href="tel:912025653123" style="color: #413D47;">+91 20 25653123</a> -->
                         <br><br>
                         <a href="mailto:school@innocenttimes.com" style="color: #413D47;">school@innocenttimes.com</a>
-                     </p>
-                  </div>
-                  <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-xs-4 ">
-                     <h3 class="footer-title">Useful Links</h3>
-                     <a href="nursery-school.html" class="footer-link">Nursery School</a>
-                     <hr class="footer-hr">
-                     <a href="early-intervention-centre.html" class="footer-link">Early Intervention Centre</a>
-                     <hr class="footer-hr">
-                     <a href="before-and-after-school-programme.html" class="footer-link ">After School Programme</a>
-                     <hr class="footer-hr">
-                     <a href="franchise-enquiry.html" class="footer-link">Franchise Enquiry</a>
-                     <hr class="footer-hr">
-                     <a href="employer-partnerships.html" class="footer-link">Employer Partnerships</a>
-                     <hr class="footer-hr">
-                     <a href="who-we-are.html" class="footer-link">About Us</a>
-                     <hr class="footer-hr">
-                     <a href="gallery.html" class="footer-link ">Gallery</a>
-                     <hr class="footer-hr">
-                  </div>
-                  <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-xs-12 d-none d-sm-block">
-                     <h3 class="footer-title">Opening Hours</h3>
-                     <a href="#" class="footer-time"><span>Mon-Sat </span>9 am to 7 pm</a>
-                     <hr class="footer-hr">
-                     <!--  <a href="#" class="footer-time"><span>Thu-Fri </span>&nbsp;&nbsp;&nbsp;&nbsp; 08:00-02:00</a> -->
-                     <!-- <hr class="footer-hr"> -->
-                     <!--  <a href="#" class="footer-time"><span>Saturday</span>&nbsp;&nbsp;&nbsp;Closed</a> -->
-                     <!-- <hr class="footer-hr"> -->
-                     <a href="#" class="footer-time"><span>Sunday</span>&nbsp;&nbsp;&nbsp;Closed</a>
-                     <hr class="footer-hr">
-                  </div>
-                  <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-12 d-none d-sm-block">
-                     <h3 class="footer-title">Quick Connect</h3>
-                     <form action="lite_process.php" method="post" class="space">
+                    </p>
+                </div>
+                <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-xs-4 ">
+                    <h3 class="footer-title">Useful Links</h3>
+                    <a href="nursery-school.html" class="footer-link">Nursery School</a>
+                    <hr class="footer-hr">
+                    <a href="early-intervention-centre.html" class="footer-link">Early Intervention Centre</a>
+                    <hr class="footer-hr">
+                    <a href="before-and-after-school-programme.html" class="footer-link ">After School Programme</a>
+                    <hr class="footer-hr">
+                    <a href="franchise-enquiry.html" class="footer-link">Franchise Enquiry</a>
+                    <hr class="footer-hr">
+                    <a href="employer-partnerships.html" class="footer-link">Employer Partnerships</a>
+                    <hr class="footer-hr">
+                    <a href="who-we-are.html" class="footer-link">About Us</a>
+                    <hr class="footer-hr">
+                    <a href="gallery.html" class="footer-link ">Gallery</a>
+                    <hr class="footer-hr">
+                </div>
+                <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-xs-12 d-none d-sm-block">
+                    <h3 class="footer-title">Opening Hours</h3>
+                    <a href="#" class="footer-time"><span>Mon-Sat </span>9 am to 7 pm</a>
+                    <hr class="footer-hr">
+                    <!--  <a href="#" class="footer-time"><span>Thu-Fri </span>&nbsp;&nbsp;&nbsp;&nbsp; 08:00-02:00</a> -->
+                    <!-- <hr class="footer-hr"> -->
+                    <!--  <a href="#" class="footer-time"><span>Saturday</span>&nbsp;&nbsp;&nbsp;Closed</a> -->
+                    <!-- <hr class="footer-hr"> -->
+                    <a href="#" class="footer-time"><span>Sunday</span>&nbsp;&nbsp;&nbsp;Closed</a>
+                    <hr class="footer-hr">
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-12 d-none d-sm-block">
+                    <h3 class="footer-title">Quick Connect</h3>
+                    <form action="lite_process.php" method="post" class="space">
                         <div class="col-sm-12" style="padding-left: 0px;background-color:transparent;">
-                           <input type="text" name="userName" class="frmm" placeholder="Name:" required />
+                            <input type="text" name="userName" class="frmm" placeholder="Name:" required />
                         </div>
                         <div class="col-sm-12" style="padding-left: 0px">
-                           <input type="text" name="mobile" class="frmm" placeholder="Phone / Mobile No.:"
-                              required />
+                            <input type="text" name="mobile" class="frmm" placeholder="Phone / Mobile No.:" required />
                         </div>
                         <div class="col-sm-12" style="padding-left: 0px">
-                           <input type="email" name="email_address" class="frmm" placeholder=" Enter Your E-Mail "
-                              required />
+                            <input type="email" name="email_address" class="frmm" placeholder=" Enter Your E-Mail "
+                                required />
                         </div>
                         <div class="col-sm-12" style="padding-left: 0px">
-                           <textarea name="message" cols="" rows="3" class="frmm" placeholder="Message:"
-                              required></textarea>
+                            <textarea name="message" cols="" rows="3" class="frmm" placeholder="Message:"
+                                required></textarea>
                         </div>
                         <div class="col-sm-12 sumbit-btm-topsp" style="padding-left: 0px">
-                           <input type="submit" class="sumbit-btn" value="SUBMIT  &rarr;" />
+                            <input type="submit" class="sumbit-btn" value="SUBMIT  &rarr;" />
                         </div>
-                     </form>
-                  </div>
-               </div>
-               <div class="row">
-                  <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-xs-12">
-                     <p class="footer-copyright">Copyright © Innocent Times Childcare Pvt. Ltd. All Rights Reserved•
-                        Designed &amp; Developed by:<a href="https://www.optimist.co.in/"> OPTIMIST BRAND DESIGN
-                        LLP.</a>
-                     </p>
-                  </div>
-                  <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 text-right">
-                     <p class="mt-15"><a href="terms-and-conditions.html" class="footer-copyright">Terms &amp;
-                        Conditions</a> | <a href="privacy-policy.html" class="footer-copyright">Privacy
-                        Policy</a>
-                     </p>
-                  </div>
-               </div>
+                    </form>
+                </div>
             </div>
-         </section>
+            <div class="row">
+                <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                    <p class="footer-copyright">Copyright © Innocent Times Childcare Pvt. Ltd. All Rights Reserved•
+                        Designed &amp; Developed by:<a href="https://www.optimist.co.in/"> OPTIMIST BRAND DESIGN
+                            LLP.</a>
+                    </p>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 text-right">
+                    <p class="mt-15"><a href="terms-and-conditions.html" class="footer-copyright">Terms &amp;
+                            Conditions</a> | <a href="privacy-policy.html" class="footer-copyright">Privacy
+                            Policy</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
     </div>
     <script>
         var acc = document.getElementsByClassName("accordion");
@@ -430,7 +451,6 @@
     <script src="asset/owl/custom-owl.js"></script>
 
     <style>
-
         .floating-wid h4 {
             cursor: pointer;
         }
